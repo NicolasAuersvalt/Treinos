@@ -3,15 +3,16 @@ using namespace std;
 
 int main() {
 	
-	int n, soma=0, i=0;
-	while(scanf("%d", &n) != EOF) {
+	int n=0, soma=0, i=0;
+	while(n >= 0) {
 		soma += n;
+		cin >> n;
 		i++;
 	}
 
-	double media = soma*1.0/i;
+	float media = 1.0*soma / (i-1);
 
-	printf("%f\n", media);
+	printf("%.2f\n", media);
 
 	return 0;
 }
