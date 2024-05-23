@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -8,13 +8,11 @@ int main() {
 
     string *p = new string[n];
 
-    int i, j;
-    for(i=0; i<n; i++)
-        getline(cin, p[i]);
-
-    int k;
+    int i, j, k;
     //hora de criptografar
     for(i=0; i<n; i++) {
+        getline(cin, p[i]);
+        
         int tam = p[i].size();
         //primeira passada
         for(j=0; j<tam; j++)
@@ -32,7 +30,6 @@ int main() {
 
         cout << p[i] << endl;
     }
-
 
     return 0;
 }
